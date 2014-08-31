@@ -32,5 +32,9 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tipAmount)
         totalLabel.text = String(format: "$%.2f", totalAmount)
     }
+
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
 }
 
