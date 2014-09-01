@@ -14,8 +14,8 @@ class SettingsViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
 
         var defaults = NSUserDefaults.standardUserDefaults()
         var tipOpt = defaults.integerForKey("defaultTipOption")
