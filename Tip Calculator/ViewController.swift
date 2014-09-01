@@ -20,6 +20,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var tipOpt = defaults.integerForKey("defaultTipOption")
+
+        if tipOpt == NSNotFound {
+            tipOpt = 1 // let's set it to the middle by default
+        }
+
+        tipControl.selectedSegmentIndex = tipOpt
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

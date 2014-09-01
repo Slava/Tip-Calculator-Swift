@@ -9,7 +9,7 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-    @IBOutlet var DefaultTipControl: UISegmentedControl!
+    @IBOutlet var defaultTipControl: UISegmentedControl!
     @IBAction func onBackPress(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
@@ -24,12 +24,12 @@ class SettingsViewController: UIViewController {
             tipOpt = 1 // let's set it to the middle by default
         }
 
-        DefaultTipControl.selectedSegmentIndex = tipOpt
+        defaultTipControl.selectedSegmentIndex = tipOpt
     }
 
     @IBAction func onTipChanged(sender: AnyObject) {
         var defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setInteger(DefaultTipControl.selectedSegmentIndex, forKey: "defaultTipOption")
+        defaults.setInteger(defaultTipControl.selectedSegmentIndex, forKey: "defaultTipOption")
         defaults.synchronize()
     }
 }

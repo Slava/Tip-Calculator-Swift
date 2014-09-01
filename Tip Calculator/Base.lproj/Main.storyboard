@@ -100,7 +100,7 @@
                     </simulatedScreenMetrics>
                     <connections>
                         <outlet property="billField" destination="T2p-ew-TIN" id="g3T-nN-Ckx"/>
-                        <outlet property="tipControl" destination="u8x-F0-ZUZ" id="p2h-2y-3xz"/>
+                        <outlet property="tipControl" destination="XC3-R7-ahf" id="Nfl-XS-iO1"/>
                         <outlet property="tipLabel" destination="Lyq-ff-pKq" id="ewB-XR-m0i"/>
                         <outlet property="totalLabel" destination="EQT-nS-MFm" id="Txl-MR-TCB"/>
                     </connections>
@@ -159,7 +159,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="1FY-sX-vo6"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="DefaultTipControl" destination="u8x-F0-ZUZ" id="SqG-9a-8VV"/>
+                        <outlet property="defaultTipControl" destination="u8x-F0-ZUZ" id="EOH-Vc-o69"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpn-JA-vMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
